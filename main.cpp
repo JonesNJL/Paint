@@ -61,12 +61,12 @@ int main()
 		glfwTerminate();
 		return -1;
 	}
-	glfwMaximizeWindow(window);
+	//glfwMaximizeWindow(window);
 	glfwMakeContextCurrent(window);
 
 	gladLoadGL();
 
-	glViewport(0, 0, 1920, 640);
+	glViewport(0, 0, 640, 640);
 	int width;
 	int height;
 	glfwGetWindowSize(window, &width, &height);

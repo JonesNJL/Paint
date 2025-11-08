@@ -10,7 +10,7 @@ out int bTexture;
 
 void main()
 {
-	gl_Position = vec4(((aPos.x / 1920.0) * 2.0) - 1.0, ((aPos.y / 640.0) * 2.0) - 1.0, aPos.z, 1.0);
+	gl_Position = vec4(((aPos.x / 640.0) * 2.0) - 1.0, ((aPos.y / 640.0) * 2.0) - 1.0, aPos.z, 1.0);
 
 	bPos = aPos;
 	bUV = vec2((aUV.x / float(aUV.y)), (aUV.z / float(aUV.w)));
