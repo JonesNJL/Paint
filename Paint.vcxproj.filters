@@ -39,195 +39,192 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\ButtonGuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ShaderClass.cpp">
+    <ClCompile Include="src\CanvasGuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VBO.cpp">
+    <ClCompile Include="src\CanvasRegion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="EBO.cpp">
+    <ClCompile Include="src\CircleSliderGuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="VAO.cpp">
+    <ClCompile Include="src\Controls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Region.cpp">
+    <ClCompile Include="src\CroppedGuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RegionManager.cpp">
+    <ClCompile Include="src\EBO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Controls.cpp">
+    <ClCompile Include="src\GuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GuiElement.cpp">
+    <ClCompile Include="src\GuiEventManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Image.cpp">
+    <ClCompile Include="src\Image.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="glad.c">
+    <ClCompile Include="src\ImageRegistry.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SSBO.cpp">
+    <ClCompile Include="src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CanvasRegion.cpp">
+    <ClCompile Include="src\MenuRegion.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ImageRegistry.cpp">
+    <ClCompile Include="src\Painter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Logger.cpp">
-      <Filter>Header Files\Util\Logger</Filter>
-    </ClCompile>
-    <ClCompile Include="Painter.cpp">
+    <ClCompile Include="src\Region.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Math.cpp">
-      <Filter>Header Files\Util\Math</Filter>
-    </ClCompile>
-    <ClCompile Include="CroppedGuiElement.cpp">
+    <ClCompile Include="src\RegionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ButtonGuiElement.cpp">
+    <ClCompile Include="src\ShaderClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MenuRegion.cpp">
+    <ClCompile Include="src\SliderGuiElement.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GuiEventManager.cpp">
+    <ClCompile Include="src\SSBO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SliderGuiElement.cpp">
+    <ClCompile Include="src\VAO.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PNG.cpp">
+    <ClCompile Include="src\VBO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\glad.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PNG.cpp">
       <Filter>Header Files\Util\FileLoading</Filter>
     </ClCompile>
-    <ClCompile Include="Inflate.cpp">
+    <ClCompile Include="src\Inflate.cpp">
       <Filter>Header Files\Util\FileLoading\Compression</Filter>
     </ClCompile>
-    <ClCompile Include="CircleSliderGuiElement.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Logger.cpp">
+      <Filter>Header Files\Util\Logger</Filter>
     </ClCompile>
-    <ClCompile Include="CanvasGuiElement.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="src\Math.cpp">
+      <Filter>Header Files\Util\Math</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="default.vert">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-    <None Include="default.frag">
-      <Filter>Resource Files\Shaders</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="shaderClass.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\List.h">
+      <Filter>Header Files\Util\Collections</Filter>
     </ClInclude>
-    <ClInclude Include="VBO.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\BitReader.h">
+      <Filter>Header Files\Util\FileLoading</Filter>
     </ClInclude>
-    <ClInclude Include="EBO.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\PNG.h">
+      <Filter>Header Files\Util\FileLoading</Filter>
     </ClInclude>
-    <ClInclude Include="VAO.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Inflate.h">
+      <Filter>Header Files\Util\FileLoading\Compression</Filter>
     </ClInclude>
-    <ClInclude Include="Region.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegionManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Controls.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="RegionAlignment.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GuiElement.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Math.h">
-      <Filter>Header Files\Util\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Int2.h">
-      <Filter>Header Files\Util\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Float4.h">
-      <Filter>Header Files\Util\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Float2.h">
-      <Filter>Header Files\Util\Math</Filter>
-    </ClInclude>
-    <ClInclude Include="Image.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Color.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SSBO.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="CanvasRegion.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ImageRegistry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Util.h">
-      <Filter>Header Files\Util</Filter>
-    </ClInclude>
-    <ClInclude Include="Logger.h">
+    <ClInclude Include="src\Logger.h">
       <Filter>Header Files\Util\Logger</Filter>
     </ClInclude>
-    <ClInclude Include="Painter.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Float2.h">
+      <Filter>Header Files\Util\Math</Filter>
     </ClInclude>
-    <ClInclude Include="CroppedGuiElement.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Float4.h">
+      <Filter>Header Files\Util\Math</Filter>
     </ClInclude>
-    <ClInclude Include="ButtonGuiElement.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Int2.h">
+      <Filter>Header Files\Util\Math</Filter>
     </ClInclude>
-    <ClInclude Include="MenuRegion.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="src\Math.h">
+      <Filter>Header Files\Util\Math</Filter>
     </ClInclude>
-    <ClInclude Include="GuiEventManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SliderGuiElement.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="List.h">
-      <Filter>Header Files\Util\Collections</Filter>
-    </ClInclude>
-    <ClInclude Include="Collections.h">
-      <Filter>Header Files\Util\Collections</Filter>
-    </ClInclude>
-    <ClInclude Include="PNG.h">
-      <Filter>Header Files\Util\FileLoading</Filter>
-    </ClInclude>
-    <ClInclude Include="BitReader.h">
-      <Filter>Header Files\Util\FileLoading</Filter>
-    </ClInclude>
-    <ClInclude Include="HuffmanTree.h">
+    <ClInclude Include="src\HuffmanTree.h">
       <Filter>Header Files\Util\Structures</Filter>
     </ClInclude>
-    <ClInclude Include="Inflate.h">
-      <Filter>Header Files\Util\FileLoading\Compression</Filter>
-    </ClInclude>
-    <ClInclude Include="CircleSliderGuiElement.h">
+    <ClInclude Include="src\ButtonGuiElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CanvasGuiElement.h">
+    <ClInclude Include="src\CanvasGuiElement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\CanvasRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CircleSliderGuiElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controls.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CroppedGuiElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuiElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GuiEventManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ImageRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MenuRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Painter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Region.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RegionAlignment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RegionManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\shaderClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SliderGuiElement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SSBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VAO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VBO.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\shaders\default.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="resources\shaders\default.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
   </ItemGroup>
 </Project>
