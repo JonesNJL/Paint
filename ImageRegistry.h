@@ -28,7 +28,7 @@ class ImageRegistry
 	public:
 		ImageRegistry();
 		void SetLayerReference(Image* layer); //Called from Painter during its construction
-		void UpdateRendering(int id, Float2 minUV, Float2 maxUV);
+		void UpdateRendering(int id, Ratio2 minUV, Ratio2 maxUV);
 		Image& GetImage(unsigned int id);
 		unsigned int GetOpenRenderingID();
 		unsigned int* GetData(int& length);

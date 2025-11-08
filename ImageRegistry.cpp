@@ -12,7 +12,7 @@ void ImageRegistry::SetLayerReference(Image* layer)
 	this->layer = layer;
 }
 
-void ImageRegistry::UpdateRendering(int id, Float2 minUV, Float2 maxUV)
+void ImageRegistry::UpdateRendering(int id, Ratio2 minUV, Ratio2 maxUV)
 {
 	//TODO: Set the rendering's min and size to just be the nessasary, visible pixels
 	//TODO: Potentially pass back the UVs representing the old UVs within the new bounds

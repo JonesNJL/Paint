@@ -1,79 +1,80 @@
-﻿  CanvasGuiElement.cpp
+﻿  main.cpp
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(6,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(8,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(9,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
 C:\Users\Nicholas\Other\Programs\Paint\Int2.h(45,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Int2.h(45,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Int2.h(51,30): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Int2.h(51,21): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
 C:\Users\Nicholas\Other\Programs\Paint\Controls.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'CanvasGuiElement.cpp')
+  (compiling source file 'main.cpp')
   
-C:\Users\Nicholas\Other\Programs\Paint\CanvasGuiElement.cpp(16,72): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CanvasGuiElement.cpp(16,49): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CanvasGuiElement.cpp(21,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CanvasGuiElement.cpp(21,28): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  CroppedGuiElement.cpp
-C:\Users\Nicholas\Other\Programs\Paint\Int2.h(45,45): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Int2.h(45,30): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Int2.h(51,30): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Int2.h(51,21): warning C4244: 'argument': conversion from 'const int' to 'float', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,49): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Color.h(101,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\Controls.h(7,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  (compiling source file 'CroppedGuiElement.cpp')
-  
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(25,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(25,29): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(27,84): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(27,62): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(30,65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(30,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(32,87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(32,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(33,103): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(33,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(46,16): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(56,77): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(56,33): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(57,78): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(57,34): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(58,74): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(58,30): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(59,75): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(59,31): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(137,94): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(137,20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(144,95): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\Nicholas\Other\Programs\Paint\CroppedGuiElement.cpp(144,20): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  Generating Code...
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,33): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,33): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,38): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(32,38): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,32): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,32): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,37): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(33,37): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,24): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,24): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,29): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(34,29): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,9): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,9): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,36): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,36): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,41): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(35,41): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,8): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,8): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,35): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,35): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,40): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(36,40): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,32): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,32): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,37): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(37,37): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,9): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,9): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,15): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(38,15): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,3): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,3): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,9): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,9): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,15): warning C4838: conversion from 'float' to 'unsigned int' requires a narrowing conversion
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(39,15): warning C4244: 'initializing': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(199,38): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+C:\Users\Nicholas\Other\Programs\Paint\main.cpp(216,2): warning C4551: function call missing argument list
   Paint.vcxproj -> C:\Users\Nicholas\Other\Programs\Paint\x64\Debug\Paint.exe

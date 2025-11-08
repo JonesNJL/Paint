@@ -61,11 +61,16 @@ int main()
 		glfwTerminate();
 		return -1;
 	}
+	glfwMaximizeWindow(window);
 	glfwMakeContextCurrent(window);
 
 	gladLoadGL();
 
-	glViewport(0, 0, 640, 640);
+	glViewport(0, 0, 1920, 640);
+	int width;
+	int height;
+	glfwGetWindowSize(window, &width, &height);
+	std::cout << "Window size: " << width << ", " << height << std::endl;
 
 
 
