@@ -1,3 +1,5 @@
 # Paint Program!
 
-Currently works using Visual Studio's debugging mode, however the compiled .exe is currently not functional. This will be my next priority for this project, as ideally I wouldn't be opening up VS every time I want to draw something.
+Executable works now! Resources are nessasary to download as well in order for the program to run, put that folder at the same path as the executable.
+
+>> WORK IN PROGRESS! <<  The project isn't optimized the best but all of that will change!

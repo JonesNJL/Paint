@@ -2,4 +2,9 @@
 .vs/
 Libraries/
 Paint/
+x64/
 resources/testing
+Paint.sln
+Paint.vcxproj
+Paint.vcxproj.filters
+Paint.vcxproj.users
