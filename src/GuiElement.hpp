@@ -1,14 +1,14 @@
 #ifndef GUI_ELEMENT_CLASS_H
 #define GUI_ELEMENT_CLASS_H
 
-#include "Util.h"
-#include "RegionAlignment.h"
+#include "Util.hpp"
+#include "RegionAlignment.hpp"
 #include "vector"
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
-#include "ImageRegistry.h"
-#include "Controls.h"
+#include "ImageRegistry.hpp"
+#include "Controls.hpp"
 
 class GuiElement
 {

@@ -6,13 +6,13 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <string>
-#include "Util.h"
-#include "Region.h"
-#include "CanvasRegion.h"
-#include "MenuRegion.h"
-#include "ImageRegistry.h"
-#include "Painter.h"
-#include "Controls.h"
+#include "Util.hpp"
+#include "Region.hpp"
+#include "CanvasRegion.hpp"
+#include "MenuRegion.hpp"
+#include "ImageRegistry.hpp"
+#include "Painter.hpp"
+#include "Controls.hpp"
 
 class RegionManager
 {
@@ -33,7 +33,7 @@ class RegionManager
 
 	public:
 		RegionManager() = default;
-		void Init(ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter);
+		void Init(ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter, Int2 screenSize);
 		void GetRenderData(std::vector<unsigned int>& verts, std::vector<GLuint>& indices);
 		void UpdateRegions(Controls& controls);
 		void SplitRegion(Region* region, bool vertical);

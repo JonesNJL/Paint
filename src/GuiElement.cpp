@@ -1,4 +1,4 @@
-#include "GuiElement.h"
+#include "GuiElement.hpp"
 
 GuiElement::GuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID)
 {

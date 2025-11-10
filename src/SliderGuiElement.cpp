@@ -1,4 +1,4 @@
-#include "SliderGuiElement.h"
+#include "SliderGuiElement.hpp"
 
 SliderGuiElement::SliderGuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID, GuiEventManager* guiEventManager, float* linkedVariable, float min, float max)
 	: CroppedGuiElement(localPosition, scale, layer, anchor, imageRegistry, imageID)

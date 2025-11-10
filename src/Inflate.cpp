@@ -1,4 +1,4 @@
-#include "Inflate.h"
+#include "Inflate.hpp"
 
 void Infate(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data)
 {

@@ -1,8 +1,8 @@
 #ifndef IMAGE_H
 #define IMAGE_H
 
-#include "Math.h"
-#include "Color.h"
+#include "Math.hpp"
+#include "Color.hpp"
 
 class Image
 {

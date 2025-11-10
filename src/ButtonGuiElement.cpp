@@ -1,4 +1,4 @@
-#include "ButtonGuiElement.h"
+#include "ButtonGuiElement.hpp"
 
 ButtonGuiElement::ButtonGuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID, GuiEventManager* guiEventManager, std::string event)
 	: CroppedGuiElement(localPosition, scale, layer, anchor, imageRegistry, imageID)

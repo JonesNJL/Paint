@@ -6,14 +6,14 @@
 #include <string>
 #include <map>
 #include <GLFW/glfw3.h>
-#include "RegionAlignment.h"
-#include "GuiElement.h"
-#include "CroppedGuiElement.h"
-#include "ButtonGuiElement.h"
-#include "SliderGuiElement.h"
-#include "CircleSliderGuiElement.h"
-#include "CanvasGuiElement.h"
-#include "Controls.h"
+#include "RegionAlignment.hpp"
+#include "GuiElement.hpp"
+#include "CroppedGuiElement.hpp"
+#include "ButtonGuiElement.hpp"
+#include "SliderGuiElement.hpp"
+#include "CircleSliderGuiElement.hpp"
+#include "CanvasGuiElement.hpp"
+#include "Controls.hpp"
 
 class Region
 {

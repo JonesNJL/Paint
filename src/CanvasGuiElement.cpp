@@ -1,4 +1,4 @@
-#include "CanvasGuiElement.h"
+#include "CanvasGuiElement.hpp"
 
 CanvasGuiElement::CanvasGuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID, Painter* painter)
 	: CroppedGuiElement(localPosition, scale, layer, anchor, imageRegistry, imageID)

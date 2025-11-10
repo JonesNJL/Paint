@@ -1,10 +1,10 @@
 #ifndef IMAGE_REGISTRY_CLASS_H
 #define IMAGE_REGISTRY_CLASS_H
 
-#include "Image.h"
+#include "Image.hpp"
 #include <map>
 #include <iostream>
-#include "PNG.h"
+#include "PNG.hpp"
 
 class ImageRegistry
 {

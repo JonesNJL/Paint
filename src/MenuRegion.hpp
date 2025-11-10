@@ -1,8 +1,8 @@
 #ifndef MENU_REGION_CLASS_H
 #define MENU_REGION_CLASS_H
 
-#include "Region.h"
-#include "Painter.h"
+#include "Region.hpp"
+#include "Painter.hpp"
 
 class MenuRegion : public Region
 {

@@ -1,8 +1,9 @@
-#include "Controls.h"
+#include "Controls.hpp"
 
-Controls::Controls(GLFWwindow* window)
+Controls::Controls(GLFWwindow* window, int screenHeight)
 {
 	this->window = window;
+	this->screenHeight = screenHeight;
 }
 
 void Controls::CreateKeybinds()
@@ -90,5 +91,5 @@ Int2 Controls::MousePos()
 	double xPos, yPos;
 	glfwGetCursorPos(window, &xPos, &yPos);
 
-	return Int2(xPos, 640 - yPos);
+	return Int2(xPos, screenHeight - yPos);
 }

@@ -1,4 +1,4 @@
-#include "GuiEventManager.h"
+#include "GuiEventManager.hpp"
 
 GuiEventManager::GuiEventManager(Painter* painter)
 {

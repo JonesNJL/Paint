@@ -2,8 +2,8 @@
 #define EVENT_MANAGER_H
 
 #include <map>
-#include "Util.h"
-#include "Painter.h"
+#include "Util.hpp"
+#include "Painter.hpp"
 
 class GuiEventManager
 {

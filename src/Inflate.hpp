@@ -2,8 +2,8 @@
 #define INFLATE_H
 
 #include <vector>
-#include "BitReader.h"
-#include "HuffmanTree.h"
+#include "BitReader.hpp"
+#include "HuffmanTree.hpp"
 
 void Infate(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data);
 void InflateBlockNoCompression(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data);

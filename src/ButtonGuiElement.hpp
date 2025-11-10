@@ -1,9 +1,9 @@
 #ifndef BUTTON_GUI_ELEMENT_CLASS_H
 #define BUTTON_GUI_ELEMENT_CLASS_H
 
-#include "CroppedGuiElement.h"
-#include "Controls.h"
-#include "GuiEventManager.h"
+#include "CroppedGuiElement.hpp"
+#include "Controls.hpp"
+#include "GuiEventManager.hpp"
 
 class ButtonGuiElement : public CroppedGuiElement
 {

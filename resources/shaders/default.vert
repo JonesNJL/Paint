@@ -8,9 +8,11 @@ out vec3 bPos;
 out vec2 bUV;
 out int bTexture;
 
+uniform vec2 screenSize;
+
 void main()
 {
-	gl_Position = vec4(((aPos.x / 640.0) * 2.0) - 1.0, ((aPos.y / 640.0) * 2.0) - 1.0, aPos.z, 1.0);
+	gl_Position = vec4(((aPos.x / screenSize.x) * 2.0) - 1.0, ((aPos.y / screenSize.y) * 2.0) - 1.0, aPos.z, 1.0);
 
 	bPos = aPos;
 	bUV = vec2((aUV.x / float(aUV.y)), (aUV.z / float(aUV.w)));

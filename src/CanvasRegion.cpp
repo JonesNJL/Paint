@@ -1,12 +1,12 @@
-#include "CanvasRegion.h"
+#include "CanvasRegion.hpp"
 
 CanvasRegion::CanvasRegion() : Region() {}
 
 CanvasRegion::CanvasRegion(RegionAlignment* left, RegionAlignment* right, RegionAlignment* top, RegionAlignment* bottom, ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter)
 	: Region(left, right, top, bottom, imageRegistry, guiEventManager, painter)
 {
-	canvasOrigin = Float2(50, 50);
-	canvasZoom = 100;
+	canvasZoom = 400;
+	canvasOrigin = Float2((left->pos + right->pos - canvasZoom) / 2, (top->pos + bottom->pos - canvasZoom) / 2);
 
 	canvasElement = CreateCanvasGuiElement(canvasOrigin + Float2(canvasZoom / 2, canvasZoom / 2), Float2(canvasZoom, canvasZoom), 1, &anchorBottomLeft, imageRegistry, 0);
 

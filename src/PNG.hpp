@@ -1,12 +1,12 @@
 #ifndef PNG_H
 #define PNG_H
 
-#include "Image.h"
+#include "Image.hpp"
 #include <fstream>
 #include <vector>
 #include <map>
-#include "BitReader.h"
-#include "Inflate.h"
+#include "BitReader.hpp"
+#include "Inflate.hpp"
 
 struct Chunk
 {

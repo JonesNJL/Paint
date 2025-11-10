@@ -4,7 +4,7 @@
 #include <string>
 #include <map>
 #include <GLFW/glfw3.h>
-#include "Util.h";
+#include "Util.hpp";
 
 class Controls
 {
@@ -19,9 +19,10 @@ class Controls
 		};
 		std::map<std::string, Keybind> keybinds;
 		GLFWwindow* window;
+		int screenHeight;
 	public:
 		Controls() = default;
-		Controls(GLFWwindow* window);
+		Controls(GLFWwindow* window, int screenHeight);
 		void CreateKeybinds();
 		void Update();
 		bool KeyDown(std::string keyID);

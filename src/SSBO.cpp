@@ -1,4 +1,4 @@
-#include "SSBO.h"
+#include "SSBO.hpp"
 
 SSBO::SSBO(unsigned int* data, GLsizeiptr size, int binding)
 {

@@ -2,10 +2,10 @@
 #define MATH_H
 
 #include <cmath>
-#include "Int2.h"
-#include "Float2.h"
-#include "Float4.h"
-#include "List.h"
+#include "Int2.hpp"
+#include "Float2.hpp"
+#include "Float4.hpp"
+#include "List.hpp"
 
 struct Ratio
 {

@@ -1,7 +1,7 @@
 #ifndef INT2_H
 #define INT2_H
 
-#include "Float2.h"
+#include "Float2.hpp"
 
 struct Int2
 {

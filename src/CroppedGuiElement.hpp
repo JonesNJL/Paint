@@ -1,8 +1,8 @@
 #ifndef CROPPED_GUI_ELEMENT_CLASS_H
 #define CROPPED_GUI_ELEMENT_CLASS_H
 
-#include "GuiElement.h"
-#include "Controls.h"
+#include "GuiElement.hpp"
+#include "Controls.hpp"
 
 class CroppedGuiElement : public GuiElement
 {

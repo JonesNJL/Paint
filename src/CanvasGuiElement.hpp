@@ -1,9 +1,9 @@
 #ifndef CANVAS_GUI_ELEMENT_CLASS_H
 #define CANVAS_GUI_ELEMENT_CLASS_H
 
-#include "CroppedGuiElement.h"
-#include "Controls.h"
-#include "GuiEventManager.h"
+#include "CroppedGuiElement.hpp"
+#include "Controls.hpp"
+#include "GuiEventManager.hpp"
 
 class CanvasGuiElement : public CroppedGuiElement
 {

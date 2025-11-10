@@ -1,6 +1,6 @@
-#include "RegionManager.h"
+#include "RegionManager.hpp"
 
-void RegionManager::Init(ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter)
+void RegionManager::Init(ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter, Int2 screenSize)
 {
 	std::cout << "but it refused" << std::endl;
 
@@ -9,8 +9,8 @@ void RegionManager::Init(ImageRegistry* imageRegistry, GuiEventManager* guiEvent
 	this->painter = painter;
 
 	RegionAlignment* initLeftAlignment = new RegionAlignment(0, false);
-	RegionAlignment* initRightAlignment = new RegionAlignment(400, false);
-	RegionAlignment* initTopAlignment = new RegionAlignment(400, false);
+	RegionAlignment* initRightAlignment = new RegionAlignment(screenSize.x, false);
+	RegionAlignment* initTopAlignment = new RegionAlignment(screenSize.y, false);
 	RegionAlignment* initBottomAlignment = new RegionAlignment(0, false);
 
 	Region* initRegion = new CanvasRegion(initLeftAlignment, initRightAlignment, initTopAlignment, initBottomAlignment, imageRegistry, guiEventManager, painter);

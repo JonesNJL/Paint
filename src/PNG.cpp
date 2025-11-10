@@ -1,4 +1,4 @@
-#include "PNG.h"
+#include "PNG.hpp"
 
 Image LoadPNG(std::string path)
 {

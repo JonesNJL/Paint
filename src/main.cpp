@@ -3,17 +3,17 @@
 #include <GLFW/glfw3.h>
 #include <vector>
 
-#include "shaderClass.h";
-#include "VBO.h";
-#include "EBO.h";
-#include "VAO.h";
-#include "SSBO.h"
-#include "Region.h"
-#include "RegionManager.h"
-#include "ImageRegistry.h"
-#include "Painter.h"
-#include "Controls.h"
-#include "GuiEventManager.h"
+#include "shaderClass.hpp";
+#include "VBO.hpp";
+#include "EBO.hpp";
+#include "VAO.hpp";
+#include "SSBO.hpp"
+#include "Region.hpp"
+#include "RegionManager.hpp"
+#include "ImageRegistry.hpp"
+#include "Painter.hpp"
+#include "Controls.hpp"
+#include "GuiEventManager.hpp"
 
 int main()
 {
@@ -63,18 +63,14 @@ int main()
 	}
 	//glfwMaximizeWindow(window);
 	glfwMakeContextCurrent(window);
+	glfwMaximizeWindow(window);
 
-	gladLoadGL();
+	gladLoadGL(); //Must go before glViewport
 
-	glViewport(0, 0, 640, 640);
-	int width;
-	int height;
-	glfwGetWindowSize(window, &width, &height);
-	std::cout << "Window size: " << width << ", " << height << std::endl;
-
-
-
-
+	int screenWidth;
+	int screenHeight;
+	glfwGetWindowSize(window, &screenWidth, &screenHeight);
+	glViewport(0, 0, screenWidth, screenHeight);
 
 	Shader shaderProgram("resources/shaders/default.vert", "resources/shaders/default.frag");
 
@@ -118,9 +114,9 @@ int main()
 	GuiEventManager guiEventManager(&painter);
 
 	RegionManager regionManager;
-	regionManager.Init(&imageRegistry, &guiEventManager, &painter);
+	regionManager.Init(&imageRegistry, &guiEventManager, &painter, Int2(screenWidth, screenHeight));
 
-	Controls controls(window);
+	Controls controls(window, screenHeight);
 	controls.CreateKeybinds();
 
 	bool yes = true;
@@ -189,6 +185,9 @@ int main()
 		unsigned int* ssboData = imageRegistry.GetData(length);
 
 		SSBO1.UpdateData(ssboData, length);
+
+		GLuint shaderScreenSizeLoc = glGetUniformLocation(shaderProgram.ID, "screenSize");
+		glUniform2f(shaderScreenSizeLoc, screenWidth, screenHeight);
 
 		SSBO1.Unbind();
 		delete[] ssboData;

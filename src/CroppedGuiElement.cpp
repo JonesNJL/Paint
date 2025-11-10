@@ -1,4 +1,4 @@
-#include "CroppedGuiElement.h"
+#include "CroppedGuiElement.hpp"
 
 CroppedGuiElement::CroppedGuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID)
 	: GuiElement(localPosition, scale, layer, anchor, imageRegistry, imageID)

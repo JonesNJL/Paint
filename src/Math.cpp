@@ -1,4 +1,4 @@
-#include "Math.h"
+#include "Math.hpp"
 
 float Min(float a, float b)
 {

@@ -1,8 +1,8 @@
 #ifndef PAINTER_H
 #define PAINTER_H
 
-#include "ImageRegistry.h"
-#include "Util.h"
+#include "ImageRegistry.hpp"
+#include "Util.hpp"
 
 class Painter
 {

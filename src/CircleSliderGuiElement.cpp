@@ -1,4 +1,4 @@
-#include "CircleSliderGuiElement.h"
+#include "CircleSliderGuiElement.hpp"
 
 CircleSliderGuiElement::CircleSliderGuiElement(Float2 localPosition, Float2 scale, int layer, Float2* anchor, ImageRegistry* imageRegistry, unsigned int imageID, GuiEventManager* guiEventManager, float* linkedVariableAngle, float minAngle, float maxAngle, float* linkedVariableRadius, float minRadius, float maxRadius)
 	: CroppedGuiElement(localPosition, scale, layer, anchor, imageRegistry, imageID)
