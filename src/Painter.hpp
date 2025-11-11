@@ -11,6 +11,7 @@ class Painter
 		ImageRegistry* imageRegistry;
 		int activeLayerID;
 		const Int2 canvasSize = Int2(64, 64);
+		Int2 previousPaintedPos = Int2(0, 0);
 		Color activeColor;
 		float brightness;
 		float hue;
@@ -18,7 +19,8 @@ class Painter
 	public:
 		Painter() = default;
 		Painter(ImageRegistry* imageRegistry);
-		void Paint(unsigned int imageID, Int2 pixelPos);
+		void Paint(unsigned int imageID, Int2 pixelPos, bool brushDown);
+		void DrawLine(Int2 startPos, Int2 endPos);
 		Image& GetLayer(); //Eventually will be replaced with a way to either:
 												//get all layers visible given a render image id from the image registry
 												//calculate the final visible image given a render image id from the image registry and the min/max pixels on the view

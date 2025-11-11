@@ -47,7 +47,9 @@ void main()
 		
 
 		uint pixelX = uint(floor(imageWidth * bUV.x));
+		if (pixelX == imageWidth) { pixelX -= 1; }
 		uint pixelY = uint(floor(imageHeight * bUV.y));
+		if (pixelY == imageHeight) { pixelY -= 1; }
 
 		uint pixelIndex = imageStartIndex + (imageWidth * pixelY) + pixelX;
 		uint color = ssboData[pixelIndex];

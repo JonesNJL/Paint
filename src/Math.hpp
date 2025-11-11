@@ -45,5 +45,6 @@ float Min(float a, float b);
 float Max(float a, float b);
 float Clamp(float val, float min, float max);
 float Mod(float a, float b);
+float Normalize(float val);
 
 #endif

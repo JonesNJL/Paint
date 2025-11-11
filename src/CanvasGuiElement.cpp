@@ -19,5 +19,5 @@ void CanvasGuiElement::UpdateSelected(Controls& controls)
 
 	Int2 canvasSize = painter->GetCanvasSize();
 	Int2 pixelPos = Int2(floor(focusedPos.x * canvasSize.x), floor(focusedPos.y * canvasSize.y));
-	painter->Paint(imageID, pixelPos);
+	painter->Paint(imageID, pixelPos, controls.KeyHit("left_mouse"));
 }

@@ -23,3 +23,8 @@ float Mod(float a, float b)
 {
 	return a - (b * floor(a / b));
 }
+
+float Normalize(float val)
+{
+	return val / abs(val);
+}
