@@ -22,6 +22,20 @@ void RegionManager::Init(ImageRegistry* imageRegistry, GuiEventManager* guiEvent
 	regionAlignments.emplace(initBottomAlignment, List<Region*> { initRegion });
 }
 
+RegionManager::~RegionManager()
+{
+	for (int i = 0; i < regions.size(); i++)
+	{
+		delete regions[i];
+	}
+
+	std::map<RegionAlignment*, List<Region*>>::iterator it;
+	for (it = regionAlignments.begin(); it != regionAlignments.end(); it++)
+	{
+		delete it->first;
+	}
+}
+
 void RegionManager::GetRenderData(std::vector<unsigned int>& verts, std::vector<GLuint>& indices)
 {
 	for (int i = 0; i < regions.size(); i++)

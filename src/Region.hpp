@@ -59,6 +59,7 @@ class Region
 
 		Region();
 		Region(RegionAlignment* left, RegionAlignment* right, RegionAlignment* top, RegionAlignment* bottom, ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter);
+		~Region();
 		void SetAlignments(RegionAlignment* left, RegionAlignment* right, RegionAlignment* top, RegionAlignment* bottom);
 		void SetCroppedGuiElementAlignments();
 		List<RegionAlignment*> GetAlignments();

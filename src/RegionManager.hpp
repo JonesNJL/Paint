@@ -34,6 +34,7 @@ class RegionManager
 	public:
 		RegionManager() = default;
 		void Init(ImageRegistry* imageRegistry, GuiEventManager* guiEventManager, Painter* painter, Int2 screenSize);
+		~RegionManager();
 		void GetRenderData(std::vector<unsigned int>& verts, std::vector<GLuint>& indices);
 		void UpdateRegions(Controls& controls);
 		void SplitRegion(Region* region, bool vertical);

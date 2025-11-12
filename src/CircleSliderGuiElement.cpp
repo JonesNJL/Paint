@@ -21,11 +21,6 @@ void CircleSliderGuiElement::UpdateVisuals()
 
 void CircleSliderGuiElement::UpdateSelected(Controls& controls)
 {
-	//	Float2 globalPos = (*anchor) + localPosition;
-	// float distanceX = globalPos.x - controls.MousePos().x;
-	// float distanceY = globalPos.y - controls.MousePos().y;
-	// if (sqrt((distanceX * distanceX) + (distanceY * distanceY)) > scale.x / 2) { return; }
-
 	Float2 halfScale = scale / 2;
 	float xFactor = (controls.MousePos().x - ((*anchor).x + localPosition.x)) / halfScale.x;
 	float yFactor = (controls.MousePos().y - ((*anchor).y + localPosition.y)) / halfScale.y;
@@ -50,7 +45,6 @@ void CircleSliderGuiElement::UpdateSelected(Controls& controls)
 	*linkedVariableAngle = minAngle + ((maxAngle - minAngle) * angle);
 
 	UpdateIndicatorPosition();
-	std::cout << "MinUV: " << minUV.x.numerator << "/" << minUV.x.denominator << ", " << minUV.y.numerator << "/" << minUV.y.denominator << std::endl;
 }
 
 bool CircleSliderGuiElement::IsMouseInBounds(Controls& controls)

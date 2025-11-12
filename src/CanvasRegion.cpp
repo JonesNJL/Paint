@@ -11,9 +11,6 @@ CanvasRegion::CanvasRegion(RegionAlignment* left, RegionAlignment* right, Region
 	canvasElement = CreateCanvasGuiElement(canvasOrigin + Float2(canvasZoom / 2, canvasZoom / 2), Float2(canvasZoom, canvasZoom), 1, &anchorBottomLeft, imageRegistry, 0);
 
 	canvasImageID = imageRegistry->GetOpenRenderingID();
-	//imageRegistry->Depict(0, canvasImageID);
-	//imageRegistry->CalculateImage(canvasImageID, painter->GetLayer()); //Normally will be set to the visible section of the layer
-
 	canvasElement->SetImage(canvasImageID);
 	canvasElement->UpdateCropping();
 }

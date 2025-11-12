@@ -17,6 +17,20 @@ class HuffmanTree
 		{
 			root = new HuffmanNode();
 		}
+
+		~HuffmanTree()
+		{
+			DeleteTree(root);
+		}
+
+		void DeleteTree(HuffmanNode* tree)
+		{
+			if (tree == nullptr) { return; }
+
+			DeleteTree(tree->left);
+			DeleteTree(tree->right);
+			delete tree;
+		}
 	
 		void Insert(unsigned int code, int numberOfBits, unsigned int symbol)
 		{

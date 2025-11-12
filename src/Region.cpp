@@ -28,6 +28,14 @@ Region::Region(RegionAlignment* left, RegionAlignment* right, RegionAlignment* t
 	backgroundCenter = CreateGuiElement(Float2(0, 0), Float2(regionWidth - doublePadding, regionHeight - doublePadding), 0, &anchorCenter, imageRegistry, 5);
 }
 
+Region::~Region()
+{
+	for (int i = 0; i < guiElements.size(); i++)
+	{
+		delete guiElements[i];
+	}
+}
+
 void Region::SetAlignments(RegionAlignment* left, RegionAlignment* right, RegionAlignment* top, RegionAlignment* bottom)
 {
 	this->alignmentLeft = left;
@@ -37,7 +45,6 @@ void Region::SetAlignments(RegionAlignment* left, RegionAlignment* right, Region
 
 	UpdateAnchors();
 	SetCroppedGuiElementAlignments();
-	std::cout << "test" << std::endl;
 }
 
 void Region::SetCroppedGuiElementAlignments()

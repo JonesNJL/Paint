@@ -40,22 +40,9 @@ Image LoadPNG(std::string path)
 		}
 
 		chunkCount += 1;
-		std::cout << chunkCount << " Balls (length): " << chunk.length << std::endl;
-		std::cout << chunkCount << " Balls (type): " << chunk.type << std::endl;
-		std::cout << chunkCount << " Balls (crc): " << chunk.CRC << std::endl;
 	}
 
-	std::cout << "Count: " << chunkCount << std::endl;
-
 	HeaderChunkData headerChunkData = ReadHeaderChunk(chunks["IHDR"][0]);
-
-	std::cout << "Header 1: " << headerChunkData.width << std::endl;
-	std::cout << "Header 2: " << headerChunkData.height << std::endl;
-	std::cout << "Header 3: " << headerChunkData.bitDepth << std::endl;
-	std::cout << "Header 4: " << headerChunkData.colorSpace << std::endl;
-	std::cout << "Header 5: " << headerChunkData.compressionMethod << std::endl;
-	std::cout << "Header 6: " << headerChunkData.filterMethod << std::endl;
-	std::cout << "Header 7: " << headerChunkData.interlacing << std::endl;
 
 	std::vector<unsigned char> uncompressedData = DecompressDataChunks(chunks["IDAT"]);
 	std::vector<unsigned char> unfilteredData = UnfilterData(uncompressedData, headerChunkData);
@@ -76,8 +63,6 @@ Image LoadPNG(std::string path)
 
 		newImage.SetPixel(pixelPos, pixelColor);
 	}
-
-	std::cout << "hehehehe: " << unfilteredData.size() << std::endl;
 
 	return newImage;
 }
@@ -224,7 +209,6 @@ std::vector<unsigned char> UnfilterData(std::vector<unsigned char>& uncompressed
 					if (x != 0) { leftByte = unfilteredData[pixelIndex + b - 4]; }
 
 					unfilteredByte = uncompressedByte + leftByte;
-					//std::cout << "Filter 1!" << std::endl;
 				}
 				else if (filter == 2)
 				{
@@ -232,10 +216,6 @@ std::vector<unsigned char> UnfilterData(std::vector<unsigned char>& uncompressed
 					if (y != 0) { upByte = unfilteredData[pixelIndex + b - (4 * headerChunkData.width)]; }
 
 					unfilteredByte = uncompressedByte + upByte;
-					//std::cout << "unc: " << (int)uncompressedByte << std::endl;
-					//std::cout << "upb: " << (int)upByte << std::endl;
-					//std::cout << "unf: " << (int)unfilteredByte << std::endl;
-					//std::cout << "Filter 2!" << std::endl;
 				}
 				else if (filter == 3)
 				{
@@ -246,7 +226,6 @@ std::vector<unsigned char> UnfilterData(std::vector<unsigned char>& uncompressed
 					if (y != 0) { upByte = unfilteredData[pixelIndex + b - (4 * headerChunkData.width)]; }
 
 					unfilteredByte = uncompressedByte + floor(((unsigned int)leftByte + (unsigned int)upByte) / 2);
-					//std::cout << "Filter 3!" << std::endl;
 				}
 				else if (filter == 4)
 				{
@@ -275,12 +254,9 @@ std::vector<unsigned char> UnfilterData(std::vector<unsigned char>& uncompressed
 					else { paethPredictor = c; }
 
 					unfilteredByte = uncompressedByte + paethPredictor;
-
-					//std::cout << "Filter 4!" << std::endl;
 				}
 				else
 				{
-					std::cout << "filter: " << (int)filter << std::endl;
 					throw std::invalid_argument("Invalid filter type!");
 				}
 

@@ -33,7 +33,6 @@ class LeastFirstBitReader
 			unreadBitCount = 0; //Discard unread bits
 			unreadBits = 0; //Discard unread bits
 			unsigned char byte = data[currentBytePos];
-			//std::cout << "Current Byte Pos: " << currentBytePos << std::endl;
 			currentBytePos += 1;
 			return byte;
 		}
@@ -122,7 +121,7 @@ class MostFirstBitReader
 	
 		unsigned int ReadBits(int numberOfBits)
 		{
-			throw std::invalid_argument("Don't call this function, idk how this would even work D: :sobbing:");
+			throw std::invalid_argument("Don't call this function, idk how this would even work...");
 
 			unsigned int bits = 0;
 	

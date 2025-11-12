@@ -40,8 +40,6 @@ class GuiElement
 		virtual Float2 GetGlobalMin();
 		virtual Float2 GetGlobalMax();
 		virtual bool IsMouseInBounds(Controls& controls);
-
-		//void Unselect();
 };
 
 #endif

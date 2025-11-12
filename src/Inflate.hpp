@@ -10,10 +10,10 @@ void InflateBlockNoCompression(LeastFirstBitReader* bitReader, std::vector<unsig
 void InflateBlockFixed(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data);
 void InflateBlockDynamic(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data);
 void InflateBlock(LeastFirstBitReader* bitReader, HuffmanTree* literalLengthTree, HuffmanTree* distanceTree, std::vector<unsigned char>& data);
-void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree& literalLengthTree, HuffmanTree& distanceTree);
-HuffmanTree GetFixedLiteralLengthTree();
-HuffmanTree GetFixedDistanceTree();
-HuffmanTree BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<unsigned int> alphabet);
+void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree*& literalLengthTree, HuffmanTree*& distanceTree);
+HuffmanTree* GetFixedLiteralLengthTree();
+HuffmanTree* GetFixedDistanceTree();
+HuffmanTree* BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<unsigned int> alphabet);
 unsigned int DecodeSymbol(LeastFirstBitReader* bitReader, HuffmanTree* huffmanTree);
 
 #endif

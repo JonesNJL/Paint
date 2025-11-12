@@ -45,20 +45,26 @@ void InflateBlockFixed(LeastFirstBitReader* bitReader, std::vector<unsigned char
 {
 	std::cout << "Inflating with fixed compression!" << std::endl;
 
-	HuffmanTree literalLengthTree = GetFixedLiteralLengthTree();
-	HuffmanTree distanceTree = GetFixedDistanceTree();
+	HuffmanTree* literalLengthTree = GetFixedLiteralLengthTree();
+	HuffmanTree* distanceTree = GetFixedDistanceTree();
 
-	InflateBlock(bitReader, &literalLengthTree, &distanceTree, data);
+	InflateBlock(bitReader, literalLengthTree, distanceTree, data);
+
+	delete literalLengthTree;
+	delete distanceTree;
 }
 
 void InflateBlockDynamic(LeastFirstBitReader* bitReader, std::vector<unsigned char>& data)
 {
 	std::cout << "Inflating with dynamic compression!" << std::endl;
 
-	HuffmanTree literalLengthTree;
-	HuffmanTree distanceTree;
+	HuffmanTree* literalLengthTree = nullptr;
+	HuffmanTree* distanceTree = nullptr;
 	DecodeTrees(bitReader, literalLengthTree, distanceTree);
-	InflateBlock(bitReader, &literalLengthTree, &distanceTree, data);
+	InflateBlock(bitReader, literalLengthTree, distanceTree, data);
+
+	delete literalLengthTree;
+	delete distanceTree;
 }
 
 void InflateBlock(LeastFirstBitReader* bitReader, HuffmanTree* literalLengthTree, HuffmanTree* distanceTree, std::vector<unsigned char>& data)
@@ -71,8 +77,6 @@ void InflateBlock(LeastFirstBitReader* bitReader, HuffmanTree* literalLengthTree
 	while (true)
 	{
 		unsigned int symbol = DecodeSymbol(bitReader, literalLengthTree);
-
-		//std::cout << "Symbol: " << symbol << std::endl;
 
 		if (symbol < 256) //Literal value
 		{
@@ -103,7 +107,7 @@ void InflateBlock(LeastFirstBitReader* bitReader, HuffmanTree* literalLengthTree
 	}
 }
 
-void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree& literalLengthTree, HuffmanTree& distanceTree)
+void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree*& literalLengthTree, HuffmanTree*& distanceTree)
 {
 	int literalLengthAlphabetLength = bitReader->ReadBits(5) + 257;
 	int distanceAlphabetLength = bitReader->ReadBits(5) + 1;
@@ -118,16 +122,12 @@ void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree& literalLengthTree,
 		huffmanLengthBitLengths[huffmanLengthAlphabetOrder[i]] = bitReader->ReadBits(3);
 	}
 
-	HuffmanTree huffmanLengthTree = BitLengthsToHuffmanTree(huffmanLengthBitLengths, huffmanLengthAlphabet);
+	HuffmanTree* huffmanLengthTree = BitLengthsToHuffmanTree(huffmanLengthBitLengths, huffmanLengthAlphabet);
 
 	std::vector<int> bitLengths;
 	while (bitLengths.size() < literalLengthAlphabetLength + distanceAlphabetLength)
 	{
-		unsigned int symbol = DecodeSymbol(bitReader, &huffmanLengthTree);
-
-		//std::cout << "lit: " << literalLengthAlphabetLength << std::endl;
-		//std::cout << "dis: " << distanceAlphabetLength << std::endl;
-		//std::cout << "bls: " << bitLengths.size() << std::endl;
+		unsigned int symbol = DecodeSymbol(bitReader, huffmanLengthTree);
 
 		if (symbol >= 0 && symbol <= 15)
 		{
@@ -163,17 +163,11 @@ void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree& literalLengthTree,
 		}
 		else
 		{
-			std::cout << "lit: " << literalLengthAlphabetLength << std::endl;
-			std::cout << "dis: " << distanceAlphabetLength << std::endl;
-			std::cout << "bls: " << bitLengths.size() << std::endl;
-			std::cout << "bruh" << symbol << std::endl;
 			throw std::invalid_argument("Invalid symbol! Must be between 0 and 18!");
 		}
 	}
 
-	//std::cout << "BRUHHH: " << bitLengths[255] << std::endl;
-	//std::cout << "l: " << huffmanLengthAlphabetLength << std::endl;
-	//throw std::invalid_argument("eeee");
+	delete huffmanLengthTree;
 
 	std::vector<int> literalLengthBitLengths(bitLengths.begin(), bitLengths.begin() + literalLengthAlphabetLength);
 	std::vector<int> distanceBitLengths(bitLengths.begin() + literalLengthAlphabetLength, bitLengths.end());
@@ -185,7 +179,7 @@ void DecodeTrees(LeastFirstBitReader* bitReader, HuffmanTree& literalLengthTree,
 	distanceTree = BitLengthsToHuffmanTree(distanceBitLengths, distanceAlphabet);
 }
 
-HuffmanTree GetFixedLiteralLengthTree()
+HuffmanTree* GetFixedLiteralLengthTree()
 {
 	std::vector<int> bitLengths(288, 0);
 	for (int i = 0; i <= 143; i++) { bitLengths[i] = 8; }
@@ -199,7 +193,7 @@ HuffmanTree GetFixedLiteralLengthTree()
 	return BitLengthsToHuffmanTree(bitLengths, alphabet);
 }
 
-HuffmanTree GetFixedDistanceTree()
+HuffmanTree* GetFixedDistanceTree()
 {
 	std::vector<int> bitLengths(30, 0);
 	for (int i = 0; i <= 29; i++) { bitLengths[i] = 5; }
@@ -210,7 +204,7 @@ HuffmanTree GetFixedDistanceTree()
 	return BitLengthsToHuffmanTree(bitLengths, alphabet);
 }
 
-HuffmanTree BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<unsigned int> alphabet)
+HuffmanTree* BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<unsigned int> alphabet)
 {
 	int maxBitLength = 0;
 	for (int i = 0; i < bitLengths.size(); i++)
@@ -232,7 +226,7 @@ HuffmanTree BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<uns
 		nextCodes.push_back((nextCodes[i - 1] + bitLengthCounts[i - 1] << 1));
 	}
 
-	HuffmanTree huffmanTree = HuffmanTree();
+	HuffmanTree* huffmanTree = new HuffmanTree();
 	for (int i = 0; i < bitLengths.size(); i++)
 	{
 		unsigned int symbol = alphabet[i];
@@ -240,7 +234,7 @@ HuffmanTree BitLengthsToHuffmanTree(std::vector<int> bitLengths, std::vector<uns
 
 		if (bitLength == 0) { continue; }
 
-		huffmanTree.Insert(nextCodes[bitLength], bitLength, symbol);
+		huffmanTree->Insert(nextCodes[bitLength], bitLength, symbol);
 		nextCodes[bitLength] += 1;
 	}
 

@@ -17,8 +17,6 @@ class List
 
 		List(int capacity)
 		{
-			//std::cout << "what" << std::endl;
-
 			data = new T[capacity];
 			this->capacity = capacity;
 			size = 0;
@@ -26,8 +24,6 @@ class List
 
 		List(std::initializer_list<T> values)
 		{	
-			//std::cout << "carrot" << std::endl;
-
 			data = new T[values.size()];
 			capacity = values.size();
 			size = values.size();
@@ -42,8 +38,6 @@ class List
 
 		~List()
 		{
-			//std::cout << "sammich" << std::endl;
-
 			if (data != nullptr)
 			{
 				delete[] data;
@@ -52,8 +46,6 @@ class List
 
 		List(const List& source)
 		{
-			//std::cout << "crazy" << std::endl;
-
 			capacity = source.capacity;
 			size = source.size;
 
@@ -66,13 +58,9 @@ class List
 
 		void operator=(const List& source)
 		{
-			//std::cout << "pee" << std::endl;
-
 			if (this == &source) { return; }
 
-			//std::cout << "1" << std::endl;
 			if (data != nullptr) { delete[] data; }
-			//std::cout << "2" << std::endl;
 
 			capacity = source.capacity;
 			size = source.size;
@@ -86,22 +74,15 @@ class List
 
 		int Size()
 		{
-			//std::cout << "adalee" << std::endl;
-
 			return size;
 		}
 
 		void Add(T value)
 		{
-			//std::cout << "draco" << std::endl;
-
 			if (size == capacity)
 			{
 				IncreaseCapacity();
 			}
-
-			//std::cout << "Cap: " << capacity << std::endl;
-			//std::cout << "Siz: " << size << std::endl;
 
 			data[size] = value;
 			size += 1;
@@ -109,8 +90,6 @@ class List
 
 		void Remove(T value)
 		{
-			//std::cout << "lucas" << std::endl;
-
 			int valueIndex = -1;
 			for (int i = 0; i < size; i++)
 			{
@@ -142,8 +121,6 @@ class List
 
 		void IncreaseCapacity()
 		{
-			//std::cout << "sorry" << std::endl;
-
 			if (capacity == 0) { capacity = 1; }
 			capacity *= 2;
 
@@ -161,8 +138,6 @@ class List
 
 		T& operator[] (int index) const
 		{
-			//std::cout << "teehee" << std::endl;
-
 			if (index < 0 || index >= size)
 			{
 				throw std::invalid_argument("Index out of range");
